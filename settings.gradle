@@ -1,0 +1,3 @@
+include ':Http'
+include ':app'
+rootProject.name = "MeHttp"

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match_wrap">
+
+    <com.dysen.optionbarview.OptionBarView
+        android:id="@+id/tv_item"
+        style="@style/match_wrap"
+        android:layout_height="@dimen/dp_48"
+        app:show_divide_line="true"
+        app:divide_line_left_margin="@dimen/dp_16"
+        app:divide_line_right_margin="@dimen/dp_16"
+        tools:ignore="MissingConstraints"
+        app:title="item"
+        app:title_color="@color/text_color_black2"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

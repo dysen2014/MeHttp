@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.dysen.mehttp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:name="com.dysen.baselib.base.AppContext"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name="com.dysen.widgets_test.PercentTestAty"></activity>
+        <activity android:name="com.dysen.MainActivity"
+
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dysen.widgets_test.OptionBarViewAty" />
+        <activity android:name="com.dysen.coil_test.CoilTestActivity" />
+        <activity android:name="com.dysen.room_test.RoomTestActy" />
+        <activity android:name=".ui.activity.WelcomeActivity" />
+        <activity android:name=".ui.activity.HttpTestAty" />
+        <activity android:name="com.dysen.baselib.ui.image_paper.BigImagePagerActivity" />
+        <activity android:name="com.dysen.baselib.ui.scan.CustomScanActivity"
+            android:launchMode="singleInstance"/>
+        <activity android:name="com.dysen.baselib.ui.country_code.CountryActivity" />
+
+
+    </application>
+
+</manifest>

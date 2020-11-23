@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:ignore="MissingConstraints"
+    tools:context="com.dysen.MainActivity">
+
+<com.dysen.optionbarview.OptionBarView
+    android:id="@+id/opv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    app:left_src="@drawable/ic_back"
+    app:left_text="返回"/>
+
+    <com.dysen.baselib.widgets.TitleLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/opv"
+        />
+
+        <include
+            layout="@layout/layout_common_recyclerview_no_refresh"
+            android:layout_width="416dp"
+            android:layout_height="682dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleLayout"
+            android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcl"
+        android:layout_width="410dp"
+        android:layout_height="456dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLayout"
+        tools:listitem="@layout/layout_common_text_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
