@@ -27,9 +27,8 @@ class WelcomeActivity : BaseActivit<BaseViewModel, ActivityWelcomeBinding>() {
 
     private var mDatas = mutableListOf<DataRes>()
 
-    override fun layoutId(): Int {
-        return R.layout.activity_welcome
-    }
+    override fun layoutId()= R.layout.activity_welcome
+
 
     override fun initView(savedInstanceState: Bundle?) {
 
